@@ -30,8 +30,8 @@ CREATE TABLE IF NOT EXISTS USER (
 CREATE TABLE IF NOT EXISTS PROVIDER (
     provider_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     bio VARCHAR(500),
-    floorPrice_range DECIMAL(4,2) NOT NULL,
-    ceilPrice_range DECIMAL(4,2) NOT NULL,
+    minimum_price DOUBLE NOT NULL,
+    maximum_price DOUBLE NOT NULL,
     url_rg_photo VARCHAR(50) NOT NULL,
     issuing_organ VARCHAR(10) NOT NULL,
     uf CHAR(2) NOT NULL,
