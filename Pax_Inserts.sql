@@ -23,7 +23,7 @@ INSERT INTO USER
              url_avatar) 
 VALUES      ('youssef', 
              'email@gmail.com', 
-             9595877, 
+             '95958773333', 
              'avs', 
              'url.com'); 
              
@@ -136,7 +136,7 @@ VALUES     (1,
             1, 
             1, 
             1,
-            'A',
+            'F',
             26.99, 
             'contrato pintura', 
             'pintura de casa', 
