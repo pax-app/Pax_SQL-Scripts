@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS USER (
     user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(50) NOT NULL,
-    cpf BIGINT NOT NULL,
+    cpf VARCHAR(11) NOT NULL,
     password VARCHAR(30) NOT NULL,
     url_avatar VARCHAR(50) NOT NULL,
     UNIQUE (cpf, email)
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS PAX (
     name VARCHAR(150) NOT NULL,
     date DATE NOT NULL,
     description VARCHAR(500) NOT NULL,
-    status ENUM('A','R','P') NOT NULL,
+    status ENUM('F','P','C') NOT NULL,
     user_id INT NOT NULL,
     provider_id INT NOT NULL,
     chat_id INT NOT NULL,
