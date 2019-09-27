@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS ADDRESS (
     complement VARCHAR(50),
     city VARCHAR(20) NOT NULL,
     cep BIGINT NOT NULL,
-    state CHAR NOT NULL,
+    state CHAR(2) NOT NULL,
     reference_point VARCHAR(50)
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 ;
 
@@ -116,6 +116,7 @@ CREATE TABLE IF NOT EXISTS PAX (
     name VARCHAR(150) NOT NULL,
     date DATE NOT NULL,
     description VARCHAR(500) NOT NULL,
+    status ENUM('A','R','P') NOT NULL,
     user_id INT NOT NULL,
     provider_id INT NOT NULL,
     chat_id INT NOT NULL,
