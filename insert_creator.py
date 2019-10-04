@@ -14,6 +14,6 @@ while True:
     values.append(str("'{}'").format(value))
 
 
-all_values = ', '.join(values)
-
-print(str("INSERT INTO {}({}) VALUES({});").format(table_name, field, all_values))
+for i in values:
+    print(str("INSERT INTO {}({}) VALUES({});").format(
+        table_name, field, i))
