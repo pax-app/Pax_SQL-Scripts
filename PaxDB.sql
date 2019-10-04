@@ -14,7 +14,6 @@
 --         => 14 Tabelas
 -- -----------------------------------------------------------------
 
-CREATE DATABASE IF NOT EXISTS PaxDB;
 USE PaxDB;
 
 CREATE TABLE IF NOT EXISTS USER (
@@ -22,7 +21,7 @@ CREATE TABLE IF NOT EXISTS USER (
     name VARCHAR(100) NOT NULL,
     email VARCHAR(50) NOT NULL,
     cpf VARCHAR(11) NOT NULL,
-    password VARCHAR(30) NOT NULL,
+    password VARCHAR(255) NOT NULL,
     url_avatar VARCHAR(50) NOT NULL,
     UNIQUE (cpf, email)
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 ;
