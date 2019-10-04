@@ -2,12 +2,12 @@
 -- 
 --                    SCRIPT DE POPULAÇÃO (DML)
 -- 
--- Data Criacao ...........: 26/09/2019
+-- Data Criacao ...........: 03/10/2019
 -- Autor(es) ..............: Lucas Dutra
 -- Banco de Dados .........: MySQL
 -- Banco de Dados(nome) ...: PaxDB
 -- 
--- Data Ultima Alteracao ..: 27/09/2019
+-- Data Ultima Alteracao ..: 03/10/2019
 --   => Criação categorias necessárias para o serviço de category
 -- 
 -- PROJETO => 01 Base de Dados
