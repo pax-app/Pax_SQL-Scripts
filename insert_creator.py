@@ -2,6 +2,9 @@ table_name = input('What is your table name?\n')
 
 field = input('Insert your field name\n')
 
+id = input('Insert your field id\n')
+
+
 values = []
 
 times = 0
@@ -15,5 +18,5 @@ while True:
 
 
 for i in values:
-    print(str("INSERT INTO {}({}) VALUES({});").format(
-        table_name, field, i))
+    print(str("INSERT INTO {}(general_category_id, {}) VALUES({}, {});").format(
+        table_name, field, id, i))
