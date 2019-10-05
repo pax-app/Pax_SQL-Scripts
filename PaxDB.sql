@@ -13,7 +13,7 @@
 -- PROJETO => 01 Base de Dados
 --         => 14 Tabelas
 -- -----------------------------------------------------------------
-
+CREATE IF NOT EXISTS PaxDB
 USE PaxDB;
 
 CREATE TABLE IF NOT EXISTS USER (
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS CHAT (
 
 CREATE TABLE IF NOT EXISTS MESSAGE (
     message_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    sender_id INT NOT NULL,
+    sender ENUM('U','P') NOT NULL,
     date_time_sent TIMESTAMP NOT NULL,
     text_message VARCHAR(500) NOT NULL,
     chat_id INT NOT NULL,
