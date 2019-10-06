@@ -5,7 +5,7 @@
 -- Data Criacao ...........: 24/09/2019
 -- Autor(es) ..............: Rogério Júnior, Youssef Muhamad e Lucas Dutra
 -- Banco de Dados .........: MySQL
--- Banco de Dados(nome) ...: bdPax
+-- Banco de Dados(nome) ...: PaxDB
 -- 
 -- Data Ultima Alteracao ..: 24/09/2019
 --   => Criação do modelo físico do banco
@@ -13,7 +13,7 @@
 -- PROJETO => 01 Base de Dados
 --         => 14 Tabelas
 -- -----------------------------------------------------------------
-CREATE IF NOT EXISTS PaxDB
+CREATE DATABASE IF NOT EXISTS PaxDB;
 USE PaxDB;
 
 CREATE TABLE IF NOT EXISTS USER (
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS MESSAGE (
     chat_id INT NOT NULL,
 
     CONSTRAINT MESSAGE_CHAT_FK FOREIGN KEY (chat_id)
-        REFERENCES CHAT(chat_id)
+        REFERENCES CHAT(chat_id) ON DELETE CASCADE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 ;
 
 CREATE TABLE IF NOT EXISTS PAX (
