@@ -84,7 +84,9 @@ CREATE TABLE IF NOT EXISTS lives (
     CONSTRAINT lives_USER_FK FOREIGN KEY (user_id)
         REFERENCES USER(user_id),
     CONSTRAINT lives_ADDRESS_FK FOREIGN KEY (address_id)
-        REFERENCES ADDRESS(address_id)
+        REFERENCES ADDRESS(address_id),
+        
+	PRIMARY KEY(user_id, address_id)
 );
 
 CREATE TABLE IF NOT EXISTS CHAT (
@@ -175,6 +177,8 @@ CREATE TABLE IF NOT EXISTS PROVIDER_CATEGORY (
 CREATE TABLE IF NOT EXISTS works (
     provider_category_id INT NOT NULL,
     provider_id INT NOT NULL,
+
+	PRIMARY KEY  (provider_id, provider_category_id),
 
     CONSTRAINT works_PROVIDER_CATEGORY_FK
         FOREIGN KEY (provider_category_id)

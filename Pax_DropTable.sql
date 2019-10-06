@@ -15,8 +15,6 @@
 -- -----------------------------------------------------------------
 USE PaxDB;
 
-USE PaxDB;
-
 DROP table works;
 DROP table PROVIDER_CATEGORY;
 DROP table GENERAL_CATEGORY;
