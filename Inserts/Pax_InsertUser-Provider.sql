@@ -26,24 +26,20 @@ VALUES
 INSERT INTO
   PROVIDER (
     bio,
-    issuing_organ,
     maximum_price,
     minimum_price,
     number,
     provider_id,
-    uf,
     url_rg_photo,
     user_id
   )
 VALUES
   (
     'Eu sou um cara muito legal',
-    'SSP',
     '150',
     '30',
     '3333333',
     NULL,
-    'DF',
     'yousseflindo.jpg',
     2
   );

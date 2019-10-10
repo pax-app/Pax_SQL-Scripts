@@ -32,8 +32,6 @@ CREATE TABLE IF NOT EXISTS PROVIDER (
     minimum_price DOUBLE NOT NULL,
     maximum_price DOUBLE NOT NULL,
     url_rg_photo VARCHAR(50) NOT NULL,
-    issuing_organ VARCHAR(10) NOT NULL,
-    uf CHAR(2) NOT NULL,
     number BIGINT NOT NULL,
     user_id INT NOT NULL,
 
