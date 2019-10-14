@@ -34,16 +34,12 @@ INSERT INTO PROVIDER
              minimum_price, 
              maximum_price, 
              url_rg_photo, 
-             issuing_organ, 
-             uf, 
              number, 
              user_id) 
 VALUES      ('bio', 
              12.34, 
              100.40, 
              'url.com', 
-             'ssp-df', 
-             '23', 
              123213333, 
              1); 
 
