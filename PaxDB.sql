@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS ADDRESS (
     address_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     street VARCHAR(30) NOT NULL,
     neighborhood VARCHAR(30) NOT NULL,
-    number INT NOT NULL,
+    number INT(5) NOT NULL,
     complement VARCHAR(50),
     city VARCHAR(20) NOT NULL,
     cep BIGINT(8) NOT NULL,
