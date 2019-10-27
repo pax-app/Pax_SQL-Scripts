@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS ADDRESS (
     number INT NOT NULL,
     complement VARCHAR(50),
     city VARCHAR(20) NOT NULL,
-    cep BIGINT NOT NULL,
+    cep BIGINT(8) NOT NULL,
     state CHAR(2) NOT NULL,
     reference_point VARCHAR(50)
 ) ENGINE = InnoDB AUTO_INCREMENT = 1, DEFAULT CHARSET utf8 ;
