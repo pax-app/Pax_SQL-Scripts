@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS PAX (
     name VARCHAR(150) NOT NULL,
     date DATE NOT NULL,
     description VARCHAR(500) NOT NULL,
-    status ENUM('F','P','C') NOT NULL,
+    status ENUM('F','P','C','I') NOT NULL,
     user_id INT NOT NULL,
     provider_id INT NOT NULL,
     chat_id INT NOT NULL,
