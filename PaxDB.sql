@@ -95,7 +95,7 @@ CREATE TABLE ADDRESS
     number   INT (5) NOT NULL,
     complement  VARCHAR (50) NULL,
     city  VARCHAR (20) NOT NULL,
-    cep  BIGINT (8) NOT NULL,
+    cep  INT (8) NOT NULL,
     state  char (2) NOT NULL,
     reference_point  VARCHAR (50) NULL,
 
