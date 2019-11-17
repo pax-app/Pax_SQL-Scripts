@@ -44,7 +44,7 @@ CREATE TABLE PROVIDER
     minimum_price  DOUBLE NOT NULL,
     maximum_price  DOUBLE NOT NULL,
     url_rg_photo  VARCHAR (300) NOT NULL,
-    rg_number  BIGINT (20) NOT NULL,
+    rg_number  INT (10) NOT NULL,
 
     CONSTRAINT PROVIDER_PK PRIMARY KEY ( provider_id ),
     CONSTRAINT PROVIDER_UK UNIQUE (user_id),
