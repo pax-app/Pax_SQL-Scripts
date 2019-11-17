@@ -162,7 +162,7 @@ CREATE TABLE PAX
 CREATE TABLE pax_photos
 ( 
    pax_id   INT (11) DEFAULT NULL,
-   photo_id  VARCHAR (50) DEFAULT NULL,
+   photo  VARCHAR (50) DEFAULT NULL,
 
   CONSTRAINT  pax_photos_PAX  FOREIGN KEY ( pax_id )
     REFERENCES  PAX ( pax_id )
