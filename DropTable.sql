@@ -22,7 +22,6 @@ DROP table report_photos;
 DROP table REPORT;
 DROP table pax_photos;
 DROP table PAX;
-DROP table MESSAGE;
 DROP table CHAT;
 DROP table lives;
 DROP table ADDRESS;
